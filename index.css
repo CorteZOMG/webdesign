@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px 0;
+}
+
+body{
+    background-color: #242424;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+main {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.restaurent {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 1200px;
+    background-color: #333;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.restaurent img {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    margin-right: 60px;
+}
+
+.restaurent p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+}
