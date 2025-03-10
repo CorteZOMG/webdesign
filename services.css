@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px 0;
+}
+
+body{
+    background-color: #242424;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+main {
+    color: white;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.addRestourant {
+    width: 300px;
+    height: 500px;
+    background-color: #1e1e1e;
+    border-radius: 50px;
+    margin: 30px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.4s ease-in-out; 
+}
+
+.addRestourant img {
+    width: 100%; 
+    height: 50%; 
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.addRestourant p {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold; 
+    font-size: 16px;
+    line-height: 1.5; 
+    text-transform: uppercase;
+    justify-self: center;
+    text-align: left;
+    letter-spacing: 0.5px; 
+}
+
+.addRestourant:hover {
+    background-color: goldenrod;
+    transition: background-color 0.4s ease-in-out; 
+}
+
+.lookRestourant {
+    width: 300px;
+    height: 500px;
+    background-color: #1e1e1e;
+    border-radius: 50px;
+    margin: 30px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.4s ease-in-out; 
+}
+
+.lookRestourant img {
+    width: 100%; 
+    height: 50%; 
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.lookRestourant p {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold; 
+    font-size: 16px;
+    line-height: 1.5; 
+    text-transform: uppercase;
+    justify-self: center;
+    text-align: left;
+    letter-spacing: 0.5px; 
+}
+
+.lookRestourant:hover {
+    background-color: goldenrod;
+    transition: background-color 0.4s ease-in-out; 
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 1;
+    transition: color 0.4s ease-in-out; 
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('pizza.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease-in-out; 
+    z-index: -1;
+}
+
+.about:hover::before {
+    filter: grayscale(0%);
+}
+
+.about:hover {
+    color: goldenrod;
+    transition: color 0.4s ease-in-out; 
+}

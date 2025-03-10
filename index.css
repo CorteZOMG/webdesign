@@ -36,13 +36,6 @@ nav ul li a:hover {
 main {
     color: white;
     text-align: center;
-    padding: 50px 0;
-}
-
-h1 {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 40px;
 }
 
 .restaurent {
@@ -56,7 +49,14 @@ h1 {
     align-items: center;
     width: 60%;
     margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 10px;
     border-radius: 15px;
+}
+
+.restaurent:hover{
+    background-color: goldenrod;
 }
 
 .restaurent img {
@@ -76,4 +76,39 @@ h1 {
     font-size: 32px;
     text-align: left;
     margin: 5;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 1;
+    transition: color 0.4s ease-in-out; 
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('pizza.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease-in-out; 
+    z-index: -1;
+}
+
+.about:hover::before {
+    filter: grayscale(0%);
+}
+
+.about:hover {
+    color: goldenrod;
+    transition: color 0.4s ease-in-out; 
 }

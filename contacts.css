@@ -13,6 +13,10 @@ header {
 body{
     background-color: #242424;
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
@@ -30,12 +34,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: gray;
+    color: gold;
 }
 
 main {
     color: white;
     text-align: center;
+    flex: 1;
 }
 
 .about {
@@ -73,15 +78,25 @@ main {
     transition: color 0.4s ease-in-out; 
 }
 
-.info {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    text-transform: uppercase;
-    justify-self: center;
-    text-align: justify;
-    text-align-last: center;
-    letter-spacing: 2px; 
-    width: 1000px;
-    padding: 50px;
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+
+footer a{
+padding-right: 100px;
+}
+
+footer img{
+    width: 24px;
+    height: 24px;
+    margin: 10px;
 }
