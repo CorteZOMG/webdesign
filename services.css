@@ -126,6 +126,25 @@ main {
     transition: background-color 0.4s ease-in-out; 
 }
 
+.services a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
+}
+
+.services div {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.services div:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
 .about {
     display: flex;
     justify-content: center;
@@ -159,4 +178,24 @@ main {
 .about:hover {
     color: goldenrod;
     transition: color 0.4s ease-in-out; 
+}
+
+@media (max-width: 1080px) {
+    .lookRestourant {
+        width: 500px;
+        height: 800px;
+    }
+
+    .addRestourant {
+        width: 500px;
+        height: 800px;
+    }
+
+    .lookRestourant p {
+        font-size: 28px;
+    }
+
+    .addRestourant p {
+        font-size: 28px;
+    }
 }

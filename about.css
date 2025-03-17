@@ -30,7 +30,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: gray;
+    color: gold;
 }
 
 main {
@@ -73,15 +73,56 @@ main {
     transition: color 0.4s ease-in-out; 
 }
 
+.about-logo {
+    width: 500px;
+    height: 500px;
+    margin-left: 20px;
+    float: right;  
+    margin-bottom: 20px; 
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
 .info {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 32px;
-    text-transform: uppercase;
-    justify-self: center;
-    text-align: justify;
-    text-align-last: center;
-    letter-spacing: 2px; 
-    width: 1000px;
     padding: 50px;
+    text-align: left;
+    animation: fadeInUp 1s ease-out; 
+}
+
+@media (max-width: 1080px) {
+    .about-logo{
+        width: 250px;
+        height: 250px;
+        float: none;
+    }
+
+    .content{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
 }

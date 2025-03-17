@@ -94,6 +94,7 @@ form {
 
 label {
     text-align: left;
+    padding-top: 10px;
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: bold;
@@ -107,6 +108,7 @@ input, textarea {
     padding: 10px;
     font-size: 16px;
     margin-bottom: 15px;
+    resize: none;
 }
 
 input:focus, textarea:focus {
@@ -151,4 +153,34 @@ footer img{
     width: 24px;
     height: 24px;
     margin: 0 10px;
+}
+
+@media (max-width: 1080px) {
+    .feedback-container {
+        width: 80%;
+        height: 80%;
+        padding: 80px;
+        border-radius: 50px;
+        resize: none;
+    }
+
+    input, textarea {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    label {
+        font-size: 52px;
+        margin-bottom: 10px;
+    }    
+
+    button {
+        font-size: 52px;
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 64px;
+        margin-bottom: 15px;
+    }
 }
