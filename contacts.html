@@ -8,7 +8,8 @@
     <body>
         <header>
             <nav>
-                <ul>
+                <div class="burger-menu">&#9776;</div>
+                <ul class="nav-links">
                     <li><a href="index.html">Домашня</a></li>
                     <li><a href="about.html">Про нас</a></li>
                     <li><a href="services.html">Послуги</a></li>
@@ -24,17 +25,23 @@
             <div class="feedback-container">
                 <h1>Зворотній зв'язок</h1>
                 <form action="#" method="POST">
-                    <label for="name">Ім'я</label>
-                    <input type="text" id="name" name="name" placeholder ="Введіть ім'я" required>
-    
-                    <label for="email">Електронна пошта</label>
-                    <input type="email" id="email" name="email" placeholder="Введіть пошту" required>
-    
+                    <div class="name-email">
+                        <div>
+                            <label for="name">Ім'я</label>
+                            <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+                        </div>
+                        <div>
+                            <label for="email">Електронна пошта</label>
+                            <input type="email" id="email" name="email" placeholder="Введіть пошту" required>
+                        </div>
+                    </div>
+                
                     <label for="message">Ваше повідомлення</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
-    
+                
                     <button type="submit">Надіслати</button>
                 </form>
+                
             </div>
         </main>
         <footer>
@@ -45,5 +52,6 @@
             <img class="email" src="email icon.png">
             <a>artem.luchak@gmail.com</a>
         </footer>
+        <script src="script.js"></script>
     </body>
 <html>
